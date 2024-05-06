@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>Dice games</h1>
+    <h3 id="msg" class="msg"></h3>
+    <div class="container">
+        <div onclick="tryBest(1)" class="box">1</div>
+        <div onclick="tryBest(2)" class="box">2</div>
+        <div onclick="tryBest(3)" class="box">3</div>
+        <div onclick="tryBest(4)" class="box">4</div>
+        <div onclick="tryBest(5)" class="box">5</div>
+        <div onclick="tryBest(6)" class="box">6</div>
+    </div>
+    <div class="container">
+        <div class="box_info"> <b>User Number :</b> <span id="user_number">10</span></div>
+        <div class="box_info"> <b>Rondom Number :</b> <span id="random_number">3</span></div>
+        <div class="box_info_result" class="box_info"><b id="result">You Loss / win</b></div>
+    </div>
+    <div class="container">
+        <div class="box_info"> <b>Turns</b><span id="total"> 10</span></div>
+        <div class="box_info"> <b>Win</b><span id="win"> 0</span></div>
+        <div class="box_info"> <b>Loss</b><span id="loss"> 0</span></div> 
+
+    </div> -->
+
+
+
+    <div class="wrapper">
+        <h1>Dice Game</h1>
+        <div class="btns">
+            <button onclick="diceValue(1)">1</button>
+            <button onclick="diceValue(2)">2</button>
+            <button onclick="diceValue(3)">3</button>
+            <button onclick="diceValue(4)">4</button>
+            <button onclick="diceValue(5)">5</button>
+            <button onclick="diceValue(6)">6</button>
+        </div>  <!--btns-->
+        <div class="results">
+            <div class="user">
+                <span>User:</span>
+                <input type="text" value="0" disabled>
+            </div>  <!--user-->
+            <div class="cpu">
+                <span>Cpu:</span>
+                <input type="text" value="0" disabled>
+            </div>  <!--cpu-->
+        </div>  <!--results-->
+
+        <div class="turns-wins-lose">
+            <div class="turn">
+                <span>Turn: 10</span>
+            </div>
+            <div class="win">
+                <span>User Win: 0</span>
+            </div>
+            <div class="lose">
+                <span>Cpu Win: 0</span>
+            </div>
+        </div>  <!--turn-wins-lose-->
+
+        <button onclick="location.reload()" class="reload">Reset</button>
+
+    </div>  <!--wrapper-->
+
+    <script src="game.js"></script>
+</body>
+</html>
